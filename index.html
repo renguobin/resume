@@ -1,0 +1,374 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content='' />
+    <meta name="keywords" content=''/>
+    <meta name="copyright" content=''/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit" />
+    <meta content="telephone=no" name="format-detection">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+<style type="text/css">
+    *{box-sizing: border-box; margin: 0; padding: 0}
+    li, ul {
+        list-style: none;
+    }
+    .resume-container{
+        margin: 1vw;
+    }
+    .resume_head {
+        padding: 0;
+        height: 76px;
+    }
+
+    .resume_head dl {
+        float: left;
+        min-width: 56%;
+        color: #fff;
+        padding: 15px 40px;
+        overflow: hidden;
+        background-color: #607a9d;
+        border-radius: 0 35px 35px 0;
+    }
+
+    .resume_head dl dt {
+        float: left;
+        font-size: 32px;
+        border-right: 1px solid #fff;
+        height: 36px;
+        line-height: 36px;
+        padding-right: 15px;
+    }
+
+    .resume_head dl dd {
+        float: left;
+        line-height: 18px;
+        padding-left: 15px;
+        font-size: 14px;
+    }
+
+    .resume_head dl dd span {
+        text-transform: uppercase;
+    }
+
+    .resume_head dl dd p {
+        font-size: 12px;
+        text-shadow: none;
+    }
+
+    .basic-info-box {
+        min-height: 102px;
+        position: relative;
+    }
+
+    .basic-info-box .basic_info_list {
+        max-width: 580px;
+        overflow: hidden;
+    }
+
+    .basic-info-box .basic_info_list li {
+        padding: 5px 0;
+        float: left;
+        min-width: 50%;
+    }
+
+    .basic-info-box .basic_info_list li span {
+        vertical-align: top;
+        min-width: 60px;
+        -moz-text-align-last: justify;
+        text-align-last: justify;
+        display: inline-block;
+    }
+    .basic-info-box .photo-box {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        z-index: 3;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        width: 108px;
+        background-color: #fff;
+        overflow: hidden;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+    }
+    .resume-body{
+        border-left: 2px solid #ddd;
+    }
+    .resume-content{
+        padding-top: 25px;
+        position: relative;
+        font-size: 14px;
+    }
+    .resume-content-main{
+        padding:10px 20px;
+    }
+    .resume-content-main .module-title {
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding: 0 30px;
+        border-radius: 12px;
+        height: 24px;
+        line-height: 24px;
+        font-size: 14px;
+        font-weight: 700;
+        background-color: #4e7282;
+        color: #fff;
+        white-space: nowrap;
+        z-index: 2;
+    }
+    .resume-content-main .line {
+        border-top: 2px solid #ddd;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 13px;
+    }
+
+
+    .resume-content .content-list {
+        margin-top: 18px;
+    }
+
+    .resume-content .content-list:nth-child(3) {
+        margin-top: 0!important;
+    }
+
+    .resume-content .content-list .list-top {
+        overflow: hidden;
+        font-size: 14px;
+        color:#607a9d;
+    }
+
+    .resume-content .content-list .list-top li {
+        float: left;
+        margin-right: 20px;
+        line-height: 1.6;
+        text-align: left;
+        font-weight: 700;
+    }
+
+    .resume-content .content-list .list-top li.name {
+        min-width: 220px;
+        text-align: center;
+        margin-left: 30px;
+    }
+
+    .resume-content .content-list .list-top li:last-child {
+        min-width: inherit;
+        margin-right: 0;
+        float: right;
+    }
+
+    .resume-content .content-list .list-top li:first-child {
+        text-align: left;
+        float: left;
+        margin-left: 0;
+        min-width: 160px;
+    }
+
+    .resume-content .content-editor {
+        margin-top: 5px;
+        color: #555;
+        line-height: 2;
+    }
+
+    .resume-content .content-list .content-editor ul{
+        margin: 0;
+        counter-reset: list-1 list-2 list-3 list-4 list-5 list-6 list-7 list-8 list-9;
+    }
+
+    .content-editor ol , .content-editor ul li {
+        padding-left: 1.5em;
+    }
+
+    .content-editor ol li, .content-editor ul li{
+        padding-left: 1.5em;
+    }
+
+    .content-editor ol>li, .content-editor ul>li {
+        list-style-type: none;
+    }
+
+     .content-editor li:before {
+         min-width: 20px;
+         margin-left: -20px;
+         margin-right: 0;
+         text-align: center;
+         font-weight: 700;
+         color: #666;
+         display: inline-block;
+         content: "\2022"!important;
+     }
+
+</style>
+<body>
+<div class="resume-container">
+    <div class="resume_head">
+        <dl>
+            <dt>个人简历</dt>
+            <dd>
+                <span>Personal resume</span>
+                <p>我一直在努力成为更好的自己</p>
+            </dd>
+        </dl>
+    </div>
+    <div class="resume-body">
+        <div class="resume-content" >
+            <div class="resume-content-main" >
+                <div class="module-title" >基本信息</div>
+                <div class="line"></div>
+                <div class="basic-info-box" >
+                    <ul class="basic_info_list">
+                        <li><span >姓　　名</span>： 任国彬</li>
+                        <li><span >年　　龄</span>： 30岁</li>
+                        <li><span >性　　别</span>： 男</li>
+                        <li><span >婚姻状况</span>： 未婚</li>
+                        <li><span >工作年限</span>： 9年经验</li>
+                        <li><span >岗位</span>： web前端</li>
+                        <li><span >联系电话</span>： 18710018497</li>
+                        <li><span >邮　　箱</span>： 609842685@qq.com</li>
+                    </ul>
+                    <div class="photo-box" >
+                        <img src="https://www.qmjianli.com/images/edit/man.png" width="100%" alt="" >
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="resume-content">
+            <div class="resume-content-main">
+                <div class="module-title">教育背景</div>
+                <div class="line" ></div>
+                <div class="content-list">
+                    <ul class="list-top">
+                        <li>2009-09 ~ 2012-05</li>
+                        <li class="name" ><b >北京人文大学</b></li>
+                        <li>网络技术应用（<b >大专</b>）</li>
+                    </ul>
+                    <div class="content-editor">
+                        <p><strong>专业成绩：优异</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="work" class="resume-content" >
+            <div class="resume-content-main">
+                <div class="module-title" >工作经验</div>
+                <div class="line"></div>
+                <div class="content-list" >
+                    <ul class="list-top">
+                        <li >2012-06 ~ 至今</li>
+                        <li class="name" ><b >川程在线科技（北京）有限公司</b></li>
+                        <li >web前端</li>
+                    </ul>
+                    <div class="content-editor">
+                        <ul>
+                            <li>运用主流技术完成相关开发任务、精准还原设计稿</li>
+                            <li>与后端开发人员一起完成需求文档中的功能模块</li>
+                            <li>分析业内主流技术实现，优化实现方案，不断改进产品功能</li>
+                            <li>负责公司旗下相应产品的前端功能设计、开发工作（如：网站、小程序等）</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="project" class="resume-content" >
+            <div class="resume-content-main">
+                <div class="module-title">项目经验</div>
+                <div class="line" ></div>
+                <div class="content-list">
+                    <ul class="list-top">
+                        <li >2020-09 ~ 至今</li>
+                        <li class="name" ><b >伴伴外送USA</b></li>
+                    </ul>
+                    <div class="content-editor">
+                        <p>负责PC、手机站、小程序所有业务模块研发</p>
+                        <p>主要实现：</p>
+                        <ul>
+                            <li>平台中所有交互功能开发（如：外卖和跑腿业务、购物车、结算中心、多平台支付等）</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="content-list">
+                    <ul class="list-top">
+                        <li >2020-04 ~ 2020-07</li>
+                        <li class="name" ><b >趣驾途</b>
+                        </li>
+
+                    </ul>
+                    <div class="content-editor">
+                        <p>负责PC、手机站、小程序所有业务模块研发</p>
+                        <p>主要实现：</p>
+                        <ul>
+                            <li>用户注册到预约陪驾师完成，用户所有的交互开发</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="content-list">
+                    <ul class="list-top">
+                        <li >2019-03 ~ 2019-06</li>
+                        <li class="name" ><b >中诺新材</b></li>
+                    </ul>
+                    <div class="content-editor">
+                        <p>负责PC、手机站、小程序所有业务模块研发</p>
+                        <p>主要实现：</p>
+                        <ul>
+                            <li>商城中所有交互功能开发（如：登录注册、购物车、结算、订单中心等）</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="content-list">
+                    <ul class="list-top">
+                        <li >2018-12 ~ 2019-03</li>
+                        <li class="name" ><b >绿野旅行</b></li>
+                    </ul>
+                    <div class="content-editor">
+                        <p>负责前端与后端页面制作</p>
+                        <p>主要实现：</p>
+                        <ul>
+                            <li>前端用户所有交互功能开发</li>
+                            <li>后端亮点功能开发（行程自定义排序、获取）</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="jineng" class="resume-content" >
+            <div class="resume-content-main">
+                <div class="module-title">技能特长</div>
+                <div class="line"></div>
+                <div class="content-editor">
+                    <ul>
+                        <li>掌握JavaScript/HTML5/CSS、JQuery等技术及框架；</li>
+                        <li>熟悉Vue等主流前端框架开发经验并有相关项目开发经验；</li>
+                        <li>微信小程序，有过商城和外卖项目的开发经验；</li>
+                        <li>熟悉PHP后端技术；有属于自己的轮子</li>
+                        <li>掌握常用Linux命令，并能够搭建PHP、Java环境</li>
+                        <li>本人有积极进取的工作和学习的态度！</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="pingjia" class="resume-content" >
+            <div class="resume-content-main">
+                <div class="module-title">自我评价</div>
+                <div class="line" ></div>
+                <div class="content-editor">
+                    <p>工作积极认真，细心负责，熟练运用办公自动化软件，善于在工作中提出问题、发现问题、解决问题，有较强的分析能力；勤奋好学，踏实肯干，动手能力强，认真负责，有很强的社会责任感；坚毅不拔，吃苦耐劳，喜欢迎接新挑战。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
